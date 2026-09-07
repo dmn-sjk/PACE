@@ -1,0 +1,26 @@
+[project]
+name = "pace"
+version = "0.1.0"
+requires-python = "==3.8.18"
+dependencies = [
+    "cma",
+    "torch==2.1.0",
+    "torchvision==0.16.0",
+    "timm==0.9.10",
+    "tensorboard",
+    "scipy",
+    "fast_hadamard_transform==1.0.4.post1",
+    "pyyaml",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu118" }
+torchvision = { index = "pytorch-cu118" }
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+explicit = true
+
+[tool.uv.extra-build-dependencies]
+fast_hadamard_transform = ["torch==2.1.0"]

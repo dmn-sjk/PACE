@@ -1,0 +1,5 @@
+# pace settings
+vector_bank_size: 30
+gamma: 0.03
+epsilon: 0.045
+fitness_lambda: 0.4

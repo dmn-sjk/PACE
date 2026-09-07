@@ -1,0 +1,16 @@
+# Shared across every method/dataset run. Values here are overridden by
+# whatever is set in configs/<dataset>/<method>.yaml.
+workers: 8
+seed: 2020
+dataroot: /path/to/datasets
+data: /path/to/imagenet
+data_corruption: /path/to/imagenet-c
+data_rendition: /path/to/imagenet-r
+output: ./outputs
+
+arch: vit_base
+batch_size: 64
+quant: false
+bit: 8
+num_loops: 1
+tag: test
